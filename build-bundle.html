@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Build Your Own Bundle</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="./assets/css/build-package.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+<body>
+<header>
+    <div class="top-bar-box">
+        <div class="top-bar">
+            THE LORD OF THE RINGS Virtual Challenges are HERE!
+            <div class="logo">
+                <a><img alt="logo" src="./resource/logo.svg"/></a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper-menu">
+        <ul class="menu">
+            <li class="item">
+                <a>Challenges <img class="icon" alt="md" src="./resource/icons/menu-down.svg"/></a>
+            </li>
+            <li class="item">
+                <a>LOTR <img class="icon" alt="md" src="./resource/icons/menu-down.svg"/></a>
+            </li>
+            <li class="item">
+                <a>Merch <img class="icon" alt="md" src="./resource/icons/menu-down.svg"/></a>
+            </li>
+            <li class="item">
+                <a>More <img class="icon" alt="md" src="./resource/icons/menu-down.svg"/></a>
+            </li>
+            <li class="item">
+                <span>Corporate</span>
+            </li>
+            <li class="item">
+                <span>Shop</span>
+            </li>
+            <li class="item">
+                <a><img class="icon" alt="basket" src="./resource/icons/basket.svg"/></a>
+            </li>
+        </ul>
+    </div>
+</header>
+<div class="content">
+    <h2 class="page-title">ALL challenges</h2>
+    <div class="sort-bar">
+        <label for="sort-by">Sort by:</label>
+        <select id="sort-by" name="sort-by">
+            <option value="popular" selected="selected">Popular</option>
+            <option value="descended-price">Descended price</option>
+            <option value="ascended-price">Ascended price</option>
+        </select>
+    </div>
+    <div class="items">
+        <div class="item" data-select="mount-kilimanjaro" data-bg="./resource/items/bg/mount-kilimanjaro.png"
+             data-emblem="./resource/items/emblem/mount-kilimanjaro.png">
+            <img class="emblem" alt="mount-kilimanjaro" src="./resource/items/emblem/mount-kilimanjaro.png">
+            <h3 class="item-title">Mount Kilimanjaro</h3>
+            <h4 class="item-distance">60 mi / 97 km</h4>
+            <h4 class="v-cards">5 Virtual Postcards</h4>
+            <h4 class="has-street-view">No StreetView</h4>
+            <button class="add-challenge">Add challenge</button>
+        </div>
+        <div class="item" data-select="angkor-wat" data-bg="./resource/items/bg/angkor-wat.png"
+             data-emblem="./resource/items/emblem/angkor-wat.png">
+            <img class="emblem" alt="angkor-wat" src="./resource/items/emblem/angkor-wat.png">
+            <h3 class="item-title">Angkor Wat</h3>
+            <h4 class="item-distance">20 mi / 32 km</h4>
+            <h4 class="v-cards">4 Virtual Postcards</h4>
+            <h4 class="has-street-view">Has StreetView</h4>
+            <button class="add-challenge">Add challenge</button>
+        </div>
+        <div class="item" data-select="inca-trail" data-bg="./resource/items/bg/inca-trail.png"
+             data-emblem="./resource/items/emblem/inca-trail.png">
+            <img class="emblem" alt="inca-trail" src="./resource/items/emblem/inca-trail.png">
+            <h3 class="item-title">Inca Trail</h3>
+            <h4 class="item-distance">26 mi / 42 km</h4>
+            <h4 class="v-cards">4 Virtual Postcards</h4>
+            <h4 class="has-street-view">Has StreetView</h4>
+            <button class="add-challenge">Add challenge</button>
+        </div>
+        <div class="item" data-select="berlin-wall" data-bg="./resource/items/bg/berlin-wall.png"
+             data-emblem="./resource/items/emblem/berlin-wall.png">
+            <img class="emblem" alt="berlin-wall" src="./resource/items/emblem/berlin-wall.png">
+            <h3 class="item-title">Berlin Wall</h3>
+            <h4 class="item-distance">30 mi / 48 km</h4>
+            <h4 class="v-cards">5 Virtual Postcards</h4>
+            <h4 class="has-street-view">Has StreetView</h4>
+            <button class="add-challenge">Add challenge</button>
+        </div>
+        <div class="item" data-select="flower-route" data-bg="./resource/items/bg/flower-route.png"
+             data-emblem="./resource/items/emblem/flower-route.png">
+            <img class="emblem" alt="flower-route" src="./resource/items/emblem/flower-route.png">
+            <h3 class="item-title">Flower Route</h3>
+            <h4 class="item-distance">41 mi / 66 km</h4>
+            <h4 class="v-cards">4 Virtual Postcards</h4>
+            <h4 class="has-street-view">Has StreetView</h4>
+            <button class="add-challenge">Add challenge</button>
+        </div>
+        <div class="item" data-select="transylvania" data-bg="./resource/items/bg/transylvania.png"
+             data-emblem="./resource/items/emblem/transylvania.png">
+            <img class="new" alt="new" src="./resource/icons/new.svg">
+            <img class="emblem" alt="transylvania" src="./resource/items/emblem/transylvania.png">
+            <h3 class="item-title">Transylvania</h3>
+            <h4 class="item-distance">231 mi / 372 km</h4>
+            <h4 class="v-cards">7 Virtual Postcards</h4>
+            <h4 class="has-street-view">Has StreetView</h4>
+            <button class="add-challenge">Add challenge</button>
+        </div>
+        <div class="item" data-select="alps-to-ocean" data-bg="./resource/items/bg/alps-to-ocean.png"
+             data-emblem="./resource/items/emblem/alps-to-ocean.png">
+            <img class="emblem" alt="alps-to-ocean" src="./resource/items/emblem/alps-to-ocean.png">
+            <h3 class="item-title">Alps to Ocean</h3>
+            <h4 class="item-distance">180 mi / 290 km</h4>
+            <h4 class="v-cards">9 Virtual Postcards</h4>
+            <h4 class="has-street-view">Has StreetView</h4>
+            <button class="add-challenge">Add challenge</button>
+        </div>
+        <div class="item" data-select="cabot-trail" data-bg="./resource/items/bg/cabot-trail.png"
+             data-emblem="./resource/items/emblem/cabot-trail.png">
+            <img class="emblem" alt="cabot-trail" src="./resource/items/emblem/cabot-trail.png">
+            <h3 class="item-title">Cabot Trail</h3>
+            <h4 class="item-distance">185 mi / 298 km</h4>
+            <h4 class="v-cards">6 Virtual Postcards</h4>
+            <h4 class="has-street-view">Has StreetView</h4>
+            <button class="add-challenge">Add challenge</button>
+        </div>
+        <div class="item" data-select="route-66" data-bg="./resource/items/bg/route-66.png"
+             data-emblem="./resource/items/emblem/route-66.png">
+            <img class="emblem" alt="route-66" src="./resource/items/emblem/route-66.png">
+            <h3 class="item-title">Route 66</h3>
+            <h4 class="item-distance">2,280 mi / 3,669 km</h4>
+            <h4 class="v-cards">24 Virtual Postcards</h4>
+            <h4 class="has-street-view">Has StreetView</h4>
+            <button class="add-challenge">Add challenge</button>
+        </div>
+        <div class="item" data-select="ring-of-kerry" data-bg="./resource/items/bg/ring-of-kerry.png"
+             data-emblem="./resource/items/emblem/ring-of-kerry.png">
+            <img class="emblem" alt="ring-of-kerry" src="./resource/items/emblem/ring-of-kerry.png">
+            <h3 class="item-title">Ring of Kerry</h3>
+            <h4 class="item-distance">2,280 mi / 3,669 km</h4>
+            <h4 class="v-cards">24 Virtual Postcards</h4>
+            <h4 class="has-street-view">Has StreetView</h4>
+            <button class="add-challenge">Add challenge</button>
+        </div>
+    </div>
+    <div class="bundle">
+        <div class="title">Your bundle: </div>
+        <div class="items"></div>
+        <button class="add-order" onclick="addToBasket()">Place Order</button>
+    </div>
+</div>
+<footer>
+    <div class="newsletter-box">
+        <form>
+            <h4 class="text">Get notified when we release a new challenge -> </h4>
+            <label>
+                <input class="newsletter" name="email" placeholder="Your email address">
+            </label>
+            <button type="submit" class="submit">Submit</button>
+        </form>
+    </div>
+    <div class="details-box">
+        <img alt="logo" src="./resource/logo-footer.svg">
+        <div class="section" data-name="about">
+            <h3 class="title">About</h3>
+            <ul>
+                <li><a>About Us</a></li>
+                <li><a>Careers</a></li>
+                <li><a>Our Causes</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Media</a></li>
+                <li><a>Support Center</a></li>
+                <li><a><img alt="social-links" src="./resource/icons/social-links.svg"></a></li>
+            </ul>
+        </div>
+        <div class="section" data-name="offerings">
+            <h3 class="title">THE CONQUEROR OFFERINGS</h3>
+            <ul>
+                <li><a>Corporate Wellness</a></li>
+                <li><a>My Virtual Mission</a></li>
+                <li><a>The Conqueror Adventures</a></li>
+                <li><a>Virtual Challenges</a></li>
+                <li><a>Virtual Walking</a></li>
+                <li><a>Virtual Race</a></li>
+                <li><a>Virtual Running</a></li>
+            </ul>
+        </div>
+        <div class="section" data-name="other">
+            <h3 class="title">PRIVACY NOTICE</h3>
+            <h5 class="description">To read our privacy notice including our GDPR policy, please click here.</h5>
+            <h3 class="title">TERMS OF SERVICE</h3>
+            <h5 class="description">To read our terms of service click here</h5>
+            <h3 class="title">download the app</h3>
+            <div class="apps">
+                <a><img alt="google-play" src="./resource/icons/google-play.svg"/></a>
+                <a><img alt="apple-store" src="./resource/icons/apple-store.svg"/></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-box">
+        <h4 class="copyright">© ACTIONARY LIMITED ALL RIGHTS RESERVED</h4>
+        <h4 class="desc">THE CONQUEROR and VIRTUAL CHALLENGES are a Trademark of Actionary. THE CONQUEROR Trademark is
+            registered in the US, UK, AU and EU.
+            VIRTUAL CHALLENGES Trademark is registered in the EU.</h4>
+    </div>
+    <script type="text/javascript" src="./assets/js/build-package.js"></script>
+</footer>
+</body>
+</html>
